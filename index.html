@@ -43,12 +43,18 @@
         .vw{
             padding: 0px 10vw;
         }
+        .bg{
+          background-image: url(./images/banner.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
       </style>
 </head>
 <body>
 <!-- header section starts here -->
     <header>
-        <div class="navbar flex-col gap-7 lg:flex-row gap-0 bg-base-100 container mx-auto vw">
+        <div class="navbar flex-col gap-7 lg:flex-row gap-0 bg-base-100 lg:vw">
             <div class="navbar-start">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -82,27 +88,26 @@
 
           <!-- banner section starts here -->
 
-          <section class="hidden lg:block container mx-auto vw">
-            <div class="hero " style="background-image: url(./images/banner.png);">
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-center text-neutral-content">
-                  <div class="px-24 py-16">
-                    <h1 class="mb-5 text-7xl font-extrabold titel-font">
-                        We Provide Effective 
-                        
-                         Legal Solutions
-                        </h1>
+          <section class="container mx-auto vw">                        
+              <div class="hero" style="background-image: url(./images/banner.png);">
+                <div class="hero-overlay bg-black opacity-60"></div>
+                <div class="text-center  z-10 text-white">
+                  <div class=" py-16">
+                    <h1 class="mb-5 text-4xl lg:text-7xl font-extrabold titel-font">
+                        We Provide Effective                        
+                        Legal Solutions
+                    </h1>
                     <p class="mb-5 font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                     
-                    <div class="flex justify-center">
-                        <div class="form-control flex-row gap-2">
+                    <div class="flex flex-col lg:flex-row justify-center">
+                        <div class="form-control flex-col lg:flex-row gap-2">
                             <div class=" ">
-                              <input type="text" placeholder="Search your services" class="input w-[500px]"/>
+                              <input type="text" placeholder="Search your services" class="input lg:w-[500px]"/>
                               
                             </div>
-                            <button class="btn rounded-md bg-[#B68C5A] outline-none border-none text-white">
+                            <button class="btn rounded-md bg-[#B68C5A] outline-none border-none text-white w-24 mx-auto">
                                 Search
-                              </button>
+                            </button>
                         </div>
                     </div>
                     
